@@ -35,7 +35,7 @@ function AboutMe({}) {
       <h1 className="text-3xl">Hi, my name is Arthur.</h1>
       <div className={paragraphStyle}>
         <p className="mb-4 sm:mb-0">
-          I'm a UX Designer &times; Front-End Dev based in the Netherlands.
+          I&apos;m a UX Designer &times; Front-End Dev based in the Netherlands.
         </p>
         <p>
           Crafting beautiful interactions and interfaces is what I like doing
@@ -48,6 +48,7 @@ function AboutMe({}) {
           className="hover:text-yellow-200 duration-150"
           href="https://brightmotive.com"
           target="_blank"
+          rel="noreferrer"
         >
           Brightmotive
         </a>

@@ -19,7 +19,7 @@ export function AppLink({ url, label, className, target }) {
 
   if (target === "_blank") {
     return (
-      <a href={url} target={target} className={classes}>
+      <a href={url} target={target} className={classes} rel="noreferrer">
         <p>{label}</p>
         <ExternalIcon aria-hidden="true" />
       </a>

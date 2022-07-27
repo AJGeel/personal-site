@@ -15,6 +15,7 @@ function CV({}) {
       className="flex flex-col items-center space-y-2 hover:space-y-3 hover:scale-105 duration-300 cursor-pointer active:scale-95 active:opacity-80 select-none flex-shrink-0 group"
       href={cvEmailSnippet}
       target="_blank"
+      rel="noreferrer"
     >
       <div className="w-28 h-40 bg-white hover:bg-yellow-50 rounded-sm text-green-900/50 flex flex-col items-center justify-center space-y-2">
         <PaperClipIcon className="h-8 w-8 text-green-900/40 group-hover:text-green-900 duration-300" />
@@ -34,8 +35,8 @@ export default function Home() {
           <CV />
           <div className="space-y-1 mb-8 sm:mb-0">
             <p className={paragraphStyle}>
-              My CV is available upon request. Shoot me a message, and I'll get
-              back to you!
+              My CV is available upon request. Shoot me a message, and I&apos;ll
+              get back to you!
             </p>
             <div className="-m-3">
               <AppLink
