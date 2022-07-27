@@ -30,15 +30,15 @@ function CV({}) {
 function UpdatedHead() {
   const title = "Arthur Geel — CV";
   const desc = `My CV is available upon request. Shoot me a message, and I'll get back to you!`;
-  const imgSrc = "https://arthurgeel.netlify.app/code.jpg";
-  const url = "https://arthurgeel.netlify.app";
+  const imgSrc = "https://arthurgeel.com/code.jpg";
+  const url = "https://arthurgeel.com";
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={desc} />
-      <link rel="shortcut icon" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/aj-profile.jpg" />
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />

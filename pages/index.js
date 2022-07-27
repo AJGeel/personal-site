@@ -78,15 +78,15 @@ function ExternalLinks({}) {
 function UpdatedHead() {
   const title = "Arthur Geel — Personal website";
   const desc = `I'm a UX Designer &times; Front-End Dev based in the Netherlands. Crafting beautiful interactions and interfaces is what I like doing most.`;
-  const imgSrc = "/code.jpg";
-  const url = "https://arthurgeel.netlify.app";
+  const imgSrc = "https://arthurgeel.com/code.jpg";
+  const url = "https://arthurgeel.com";
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={desc} />
-      <link rel="shortcut icon" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/aj-profile.jpg" />
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
