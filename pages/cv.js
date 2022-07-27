@@ -18,11 +18,13 @@ function CV({}) {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="w-28 h-40 bg-white hover:bg-yellow-50 rounded-sm text-green-900/50 flex flex-col items-center justify-center space-y-2">
-        <PaperClipIcon className="h-8 w-8 text-green-900/40 group-hover:text-green-900 duration-300" />
-        <p className="group-hover:text-green-900 duration-300">cv.pdf</p>
+      <div className="w-28 h-40 bg-yellow-50 hover:bg-white rounded-sm text-yellow-900/50 flex flex-col items-center justify-center space-y-2 duration-300">
+        <PaperClipIcon className="h-8 w-8 text-yellow-900/40 group-hover:text-yellow-900 duration-300" />
+        <p className="group-hover:text-yellow-900 duration-300">cv.pdf</p>
       </div>
-      <p className={`${paragraphStyle} duration-300`}>Request ☝️</p>
+      <p className={`${paragraphStyle} group-hover:text-white duration-300`}>
+        Request ☝️
+      </p>
     </a>
   );
 }
@@ -78,6 +80,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <UpdatedHead />
     </div>
   );
 }

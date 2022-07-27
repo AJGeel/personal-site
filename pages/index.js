@@ -17,7 +17,7 @@ const links = [
   },
 ];
 
-const paragraphStyle = "text-[15px] leading-relaxed text-white/70";
+const paragraphStyle = "leading-relaxed text-white/70";
 
 // Helper Components
 
@@ -26,6 +26,7 @@ function ProfilePic({}) {
     <div
       className="w-12 h-12 rounded-full bg-center bg-cover"
       style={{ backgroundImage: `url('aj-profile.jpg')` }}
+      data-tip="Hello world"
     />
   );
 }
@@ -68,7 +69,7 @@ function ExternalLinks({}) {
           url={item.url}
           label={item.label}
           target={item.target}
-          className={`${paragraphStyle} m-3 hover:text-yellow-200 duration-150`}
+          className={`${paragraphStyle} mx-3 my-2 hover:text-yellow-200 duration-150`}
         />
       ))}
     </div>
@@ -106,12 +107,17 @@ function UpdatedHead() {
 // View
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
-      <section className="max-w-lg w-full flex flex-col space-y-8 text-white p-8">
-        <ProfilePic />
-        <AboutMe />
-        <ExternalLinks />
-      </section>
+    <div className="h-screen flex flex-col justify-between items-center">
+      <div className="h-full flex flex-col  justify-center">
+        <section className="max-w-xl w-full flex flex-col space-y-8 text-white p-8">
+          <ProfilePic />
+          <AboutMe />
+          <ExternalLinks />
+        </section>
+      </div>
+      <footer className="text-white/40 sm:text-white/20 text-sm p-4 max-w-xl">
+        My favourite stack: Figma &times; NextJS &times; TailwindCSS.
+      </footer>
 
       <UpdatedHead />
     </div>
