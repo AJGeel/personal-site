@@ -30,7 +30,7 @@ function CV({}) {
 function UpdatedHead() {
   const title = "Arthur Geel — CV";
   const desc = `My CV is available upon request. Shoot me a message, and I'll get back to you!`;
-  const imgSrc = "/code.jpg";
+  const imgSrc = "https://arthurgeel.netlify.app/code.jpg";
   const url = "https://arthurgeel.netlify.app";
 
   return (
