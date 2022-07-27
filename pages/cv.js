@@ -1,5 +1,6 @@
+import Head from "next/head";
 import { AppLink } from "../components/app-link";
-import { PaperClipIcon, ChatAltIcon } from "@heroicons/react/outline";
+import { PaperClipIcon } from "@heroicons/react/outline";
 
 // Data
 
@@ -23,6 +24,34 @@ function CV({}) {
       </div>
       <p className={`${paragraphStyle} duration-300`}>Request ☝️</p>
     </a>
+  );
+}
+
+function UpdatedHead() {
+  const title = "Arthur Geel — CV";
+  const desc = `My CV is available upon request. Shoot me a message, and I'll get back to you!`;
+  const imgSrc = "/code.jpg";
+  const url = "https://arthurgeel.netlify.app";
+
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta name="description" content={desc} />
+      <link rel="shortcut icon" href="/favicon.svg" />
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={desc} />
+      <meta property="og:image" content={imgSrc} />
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={url} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={desc} />
+      <meta property="twitter:image" content={imgSrc} />
+    </Head>
   );
 }
 

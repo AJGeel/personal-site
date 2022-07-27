@@ -1,4 +1,5 @@
 import { AppLink } from "../components/app-link";
+import Head from "next/head";
 
 // Data
 
@@ -74,6 +75,34 @@ function ExternalLinks({}) {
   );
 }
 
+function UpdatedHead() {
+  const title = "Arthur Geel — Personal website";
+  const desc = `I'm a UX Designer &times; Front-End Dev based in the Netherlands. Crafting beautiful interactions and interfaces is what I like doing most.`;
+  const imgSrc = "/code.jpg";
+  const url = "https://arthurgeel.netlify.app";
+
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta name="description" content={desc} />
+      <link rel="shortcut icon" href="/favicon.svg" />
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={desc} />
+      <meta property="og:image" content={imgSrc} />
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={url} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={desc} />
+      <meta property="twitter:image" content={imgSrc} />
+    </Head>
+  );
+}
+
 // View
 export default function Home() {
   return (
@@ -83,6 +112,8 @@ export default function Home() {
         <AboutMe />
         <ExternalLinks />
       </section>
+
+      <UpdatedHead />
     </div>
   );
 }
